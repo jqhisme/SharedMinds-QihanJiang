@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoonWalk - Video Query Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left side: Video player -->
+        <div class="video-section">
+            <video id="videoPlayer" class="video-player" loop autoplay controls playsinline>
+                <source src="title.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Right side: Input and controls -->
+        <div class="control-section">
+            <h1 class="title">MoonWalk</h1>
+            
+            <textarea 
+                id="queryInput" 
+                class="query-input" 
+                placeholder="Enter queries separated by semicolons (e.g., person walking; person running; person jumping)"
+                spellcheck="false"></textarea>
+            
+            <button id="submitBtn" type="button" class="submit-btn">Submit</button>
+            
+            <div id="status" class="status-message"></div>
+        </div>
+    </div>
+
+    <!-- Background music for footage playback (no controls, loops while footage plays) -->
+    <audio id="bgMusic" src="music.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
