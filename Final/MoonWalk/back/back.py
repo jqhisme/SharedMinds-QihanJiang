@@ -13,7 +13,22 @@ import logging
 import sys
 
 EMB_DIR = "./embeddings"
-MODEL_CKPT = "./univtg/ckpts/model_raw.ckpt"
+
+# check the ./univtg/ckpts directory
+# if model_raw.ckpt exist use it
+# otherwise use the first ckpt found
+# if no ckpt found, raise error
+
+MODEL_CKPT = None
+ckpt_dir = "./univtg/ckpts"
+if os.path.exists(ckpt_dir):
+    ckpt_files = [f for f in os.listdir(ckpt_dir) if f.endswith('.ckpt')]
+    if "model_raw.ckpt" in ckpt_files:
+        MODEL_CKPT = os.path.join(ckpt_dir, "model_raw.ckpt")
+    elif len(ckpt_files) > 0:
+        MODEL_CKPT = os.path.join(ckpt_dir, ckpt_files[0])
+if MODEL_CKPT is None:
+    raise FileNotFoundError(f"No checkpoint found in {ckpt_dir}")
 GPU_ID = 0
 VIDEO_DIR = "./footages"
 
