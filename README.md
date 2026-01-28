@@ -1,4 +1,4 @@
-# Qihan (Christoff) Jiang's Documentation for Shared Mind Class Fall2025 at NYU ITP
+# Qihan (Christoff) Jiang's Documentation for Shared Minds Class Fall2025 at NYU ITP
 
 ## Week 1
 
