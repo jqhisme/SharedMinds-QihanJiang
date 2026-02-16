@@ -2,7 +2,7 @@
 Moonwalk is an interactive storytelling experience that allow users to navigate a story via textual input
 ![Main](figures/main.png)
 
-# Motivation
+## Motivation
 There are two main properties of neural networks that may be conducive to interactive storytelling. First, neural networks model a distribution of information, and the actual contents are sampled from the distribution. For example, LLM nad generate different ways to express thankfulness, such as thank you, thanks, and I'm grateful. The actual contents are different, but their underlying meanings are the same. This may enable interactive storytelling to be more individualized and move away from the rigid multiple choice paradigm. The model is capable of generating different content, or digest different user inputs, while still maintaining a multiple choice structure. Secondly, neural networks are capable of capturing the abstracted information, which humans can make connections in a more implicit way. This will allow audiences to be in a more flow-like state when engaging in these experiences, without needing to face explicit choices.
 
 
@@ -27,3 +27,15 @@ Navigate to the ```Moonwalk``` directory. Run the backend by running
 python -m back.back
 ```
 Then open ```front/index.html```
+
+## Demo
+Looping a single video when there is no text input
+<img width="1<img width="1911" height="691" alt="1765995432440_Screenshot 2025-12-17 131244" src="https://github.com/user-attachments/assets/10c79df2-c06f-457b-b758-7302259c1dea" />
+
+Text input changes the video content
+<img width="1911" height="691" alt="1765995432440_Screenshot 2025-12-17 131244" src="https://github.com/user-attachments/assets/2ed3825b-f8db-462c-9064-ac869ad9e860" />
+
+User video assembly using semicolumn
+<img width="1910" height="672" alt="1765995465811_Screenshot 2025-12-17 131328" src="https://github.com/user-attachments/assets/10330f5c-4e90-4546-a51b-d2004cc6fc3b" />
+
+
