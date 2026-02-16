@@ -30,7 +30,7 @@ Then open ```front/index.html```
 
 ## Demo
 Looping a single video when there is no text input
-<img width="1<img width="1911" height="691" alt="1765995432440_Screenshot 2025-12-17 131244" src="https://github.com/user-attachments/assets/10c79df2-c06f-457b-b758-7302259c1dea" />
+<img width="1911" height="676" alt="1765995390169_Screenshot 2025-12-17 131135" src="https://github.com/user-attachments/assets/a99b51a5-33ee-4c76-b67f-631c7f6f35ba" />
 
 Text input changes the video content
 <img width="1911" height="691" alt="1765995432440_Screenshot 2025-12-17 131244" src="https://github.com/user-attachments/assets/2ed3825b-f8db-462c-9064-ac869ad9e860" />
